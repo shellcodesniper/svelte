@@ -14,5 +14,12 @@ declare namespace App {
     caches: CacheStorage & { default: Cache }
     }
 	// interface PageData {}
+  // NOTE :
+  // Defines the common shape of the $page.data store - that is, the data that is shared between all pages. The 
+  // Load
+  // and 
+  // ServerLoad
+  //  functions in ./$types will be narrowed accordingly. Use optional properties for data that is only present on specific pages. Do not add an index signature ([key: string]: any).
+
 	// interface Platform {}
 }
