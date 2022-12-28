@@ -1,14 +1,11 @@
 <h1>Welcome to SvelteKit</h1>
 <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
 
-<!-- <script> -->
-<!--   /** @type {import('./$types').PageData} */ -->
-<!--   export let data; -->
-<!-- </script> -->
-<!---->
-<!-- <h1>{data.post.title}</h1> -->
-<!-- <div>{@html data.post.content}</div> -->
-
 <script lang="ts">
-  import { PageData } from './$types';
+  import type { PageData } from './$types';
+  let data: PageData = $page;
+  export let json_data: string = JSON.stringify(data, null, 2);
+
 </script>
+
+<div>{@html json_data}</div>
