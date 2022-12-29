@@ -4,37 +4,35 @@
 </script>
 
 <style>
-  .inline-main-flex-box {
-    display: flex;
-    flex-direction: column;
-    width: 80vw;
-    /* min-height: 100vh; */
-    margin: 1rem 10vw 0.38rem 10vw;
-    background-color: var(--second-bg);
-  }
-
-  .inline-main-inner-flex-box {
-    display: inline-block;
-    flex-direction: column;
+  .inline-main {
+    display: block;
     align-items: center;
     justify-content: center;
   }
-
-  .spacer {
-    background-color: red;
-    height: 2rem;
+  @media (max-width: 800px) {
+    .inline-jumper {
+      display: block;
+      text-align: center;
+    }
   }
 
+  @media (min-width: 800px) {
+    .inline-jumper {
+      width: 0.5rem;
+      display: inline-block;
+    }
+  }
 </style>
 
-<NavBar />
-<div class="spacer"></div>
-<div class="inline-main-flex-box">
-  <!-- NAVBAR -->
+<!-- Maybe Mobile Navbar -->
+<div class="css-container">
+  <NavBar />
+  <!-- <header>NAVBAR</header> -->
 
-  <div id="flex-box" class="inline-main-inner-flex-box">
+  <main id="main-box" class="inline-main">
     <slot />
-  </div>
+  </main>
+  <footer><span>장부가 세상에 태어나 큰 뜻을 품었으니,<div class="inline-jumper"></div>죽어도 그 뜻 잊지 말자 하늘에 대고 맹세 해본다.</span></footer>
   <!-- MAIN CONTENT -->
 </div>
 <!-- MAIN CONTAINER -->
