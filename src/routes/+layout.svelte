@@ -4,6 +4,9 @@
 </script>
 
 <NavBar />
-<div class="container">
+<!-- NAVBAR -->
+<div class="css-main-container">
+  <!-- MAIN CONTAINER -->
   <slot />
+  <!-- MAIN CONTENT -->
 </div>

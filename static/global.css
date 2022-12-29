@@ -5,6 +5,7 @@
 */
 
 :root {
+  --body-bg: #212529;
   --first-level-shadow-color: #6d6875;
   --first-level-selected-color: #80ffdb;
   --first-level-background-color: #1b263b;
@@ -13,6 +14,12 @@
   --link-hover-color: var(--first-level-selected-color);
   --input-background-color: #4a4e69;
 }
+
+.css-first-level {
+  background-color: var(--first-level-background-color);
+  filter: brightness(0.7);
+}
+/* NOTE: 첫번째 레벨 배경색 */
 
 /* ==== GLOBAL VARIABLES ===== */
 
@@ -46,15 +53,19 @@ pre, code { font-family: Hack, monospace; }
 /* HACK : Global Font Setting */
 
 
-body {
+html, body {
   width: 100%;
   height: 100%;
-  background-color: #212529;
-  color: var(--first-level-text-color);
-  font-family: inherit;
 }
 
-/* HACK : Global Body Setting */
+body {
+  background-color: var(--body-bg);
+  color: var(--first-level-text-color);
+  font-family: inherit;
+  min-width: 100%;
+}
+
+/* HACK : Global Html, Body Setting */
 
 h1, h2, h3, h4, h5 ,h6, a, p, span, li, ul, ol, blockquote, pre, code, input, textarea {
   font-family: inherit;
@@ -83,3 +94,7 @@ input.input-box, textarea {
 
 /* HACK : INPUT, TEXTAREA Filling */
 
+.css-main-container {
+  width: 100%;
+  height: 100%;
+}
