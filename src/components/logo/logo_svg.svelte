@@ -1,9 +1,8 @@
 <style>
   .inner-logo-inner-svg {
     display: inline-block;
-    width: 100%;
     height: 100%;
-    fill: var(--primary-text);
+    fill: var(--logo-color);
     position: inherit;
   }
 </style>

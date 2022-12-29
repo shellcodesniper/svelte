@@ -10,11 +10,13 @@
   --third-bg: #2f2f2f;
   --fourth-bg: #3f3f3f;
   --fifth-bg: #4f4f4f;
+  --logo-color: #f5f5f5;
 
 
   --footer-text: #B4E1FF;
-
   --primary-text: #f8f9fa;
+  --nav-link-text: #D8D5DB;
+  --bdev-io-text: #B0D7FF;
 
   --first-level-shadow-color: #6d6875;
   --first-level-selected-color: #80ffdb;
@@ -106,6 +108,8 @@ p {
 
 a {
   color: var(--link-color);
+  text-decoration: none;
+
 }
 a:hover {
   color: var(--link-hover-color);
@@ -118,6 +122,12 @@ input.input-box, textarea {
 
 
 /* HACK : INPUT, TEXTAREA Filling */
+
+
+
+
+
+
 
 
 @media all and (max-width: 800px) {
