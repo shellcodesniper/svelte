@@ -5,10 +5,17 @@
 */
 
 :root {
-  --body-bg: #212529;
+  --body-bg: #121212;
+  --second-bg: #212121;
+  --third-bg: #2f2f2f;
+  --fourth-bg: #3f3f3f;
+  --fifth-bg: #4f4f4f;
+
+  --primary-text: #f8f9fa;
+
   --first-level-shadow-color: #6d6875;
   --first-level-selected-color: #80ffdb;
-  --first-level-background-color: #1b263b;
+  --first-level-background-color: #212529;
   --first-level-text-color: #f8f9fa;
   --link-color: #fcbf49;
   --link-hover-color: var(--first-level-selected-color);
