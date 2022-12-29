@@ -7,9 +7,14 @@ const config = {
   preprocess: preprocess(),
 	kit: {
 		adapter: adapter({
+      pages: 'build',
+      assets: 'build',
+      precompress: false,
       fallback: 'kuuwange.html',
     }),
-    prerender: { entries: [] },
+    prerender: {
+      entries: [],
+    },
     alias: {
       $components: './src/components',
       $css: './src/css',
