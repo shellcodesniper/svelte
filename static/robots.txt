@@ -16,5 +16,6 @@ Disallow: /hint/
 Disallow: /hint2/
 Disallow: /xmvk/
 Disallow: /xmvk2/
-disallow: /mkfn/
-disallow: /fjx/
+Disallow: /mkfn/
+Disallow: /fjx/
+Disallow: /private*/
