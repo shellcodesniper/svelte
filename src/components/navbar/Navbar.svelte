@@ -3,7 +3,7 @@
     header {
       margin-bottom: 2rem;
     }
-    header > .inline-logo, header > .inline-nav {
+    header > .inline-logo, header > .inline-navbar {
       display: none;
     }
   }
