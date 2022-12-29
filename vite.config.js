@@ -1,5 +1,6 @@
 import { imagetools } from 'vite-imagetools';
 import { sveltekit } from '@sveltejs/kit/vite';
+import svg from '@poppanator/sveltekit-svg'
 import path from 'path';
 
 const supportedExtensions = ['png', 'jpg', 'jpeg', 'webp', 'gif', 'svg'];
@@ -20,6 +21,7 @@ const config = {
 			}
 		}),
     sveltekit(),
+    svg(),
   ],
 	test: {
 		include: ['src/**/*.{test,spec}.{js,ts}']
