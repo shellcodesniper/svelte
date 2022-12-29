@@ -12,9 +12,6 @@ const config = {
       precompress: false,
       fallback: null,
     }),
-    prerender: {
-      default: true
-    },
     alias: {
       $components: './src/components',
       $css: './src/css',
