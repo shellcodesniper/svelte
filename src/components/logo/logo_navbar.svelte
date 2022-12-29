@@ -1,9 +1,9 @@
 <script type="ts">
-  import LogoText from './logo_svg.svelte?component';
+  import LogoSvg from './logo_svg.svelte?component';
 </script>
 
 <style>
-  .inline-navbar-logo {
+  .inline-navbar-logo-wrapper {
     display: inline-block;
     width: 100%;
     height: 2rem;
@@ -11,7 +11,7 @@
   }
 </style>
 
-<div class="inline-navbar-logo">
-  <LogoText></LogoText>
+<div class="inline-navbar-logo-wrapper">
+  <LogoSvg />
 </div>
 
