@@ -10,10 +10,10 @@ const config = {
       pages: 'build',
       assets: 'build',
       precompress: false,
-      fallback: 'kuuwange.html',
+      fallback: null,
     }),
     prerender: {
-      entries: [],
+      default: true
     },
     alias: {
       $components: './src/components',
