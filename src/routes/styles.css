@@ -1,0 +1,157 @@
+/*
+* Custom Global Style Sheet Created By KuuwangE <root@ql.gl>
+* Git: https://github.com/shellcodesniper/
+* KuuwangE, All Rights Reserved.
+*/
+
+:root {
+  --body-bg: #121212;
+  --second-bg: #212121;
+  --third-bg: #2f2f2f;
+  --fourth-bg: #3f3f3f;
+  --fifth-bg: #4f4f4f;
+  --logo-color: #f5f5f5;
+
+
+  --footer-text: #B4E1FF;
+  --primary-text: #f8f9fa;
+  --nav-link-text: #D8D5DB;
+  --bdev-io-text: #B0D7FF;
+
+  --first-level-shadow-color: #6d6875;
+  --first-level-selected-color: #80ffdb;
+  --first-level-background-color: #212529;
+  --first-level-text-color: #f8f9fa;
+  --link-color: #fcbf49;
+  --link-hover-color: var(--first-level-selected-color);
+  --input-background-color: #4a4e69;
+}
+
+.css-first-level {
+  background-color: var(--first-level-background-color);
+  filter: brightness(0.7);
+}
+/* NOTE: 첫번째 레벨 배경색 */
+
+/* ==== GLOBAL VARIABLES ===== */
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 200, 400;
+  font-display: swap; /* NOTE : 글꼴이 로딩되면서, 스와핑 */
+  src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@200;400&display=swap') format('woff2');
+  unicode-range: U+1100-11FF, U+3130-318F, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF;
+}
+/* NOTE : 한글 폰트 정의 */
+
+@font-face {
+  font-family: 'Open Sans', system-ui, -apple-system, 'Segoe UI', 'Helvetica Neue', sans-serif; /* Fail-Safe */
+  font-style: normal;
+  font-weight: 400, 700;
+  font-display: swap;
+  src: url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap') format('woff');
+}
+/* NOTE : 영어,그외 폰트 정의 */
+
+
+pre, code { font-family: Hack, monospace; }
+
+
+* {
+  font-family: 'Noto Sans KR', 'Open Sans', system-ui, -apple-system, 'Segoe UI', 'Helvetica Neue', sans-serif;
+}
+
+/* HACK : Global Font Setting */
+
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: var(--body-bg);
+  color: var(--first-level-text-color);
+  font-family: inherit;
+  min-width: 100%;
+}
+
+footer {
+  display: block;
+  text-align: center;
+}
+
+footer > span {
+  font-style: italic;
+  font-weight: 200;
+  font-size: 0.8rem;
+  padding-top: 0.1rem;
+  line-height: 0.9rem;
+  color: var(--footer-text);
+}
+
+/* HACK : Global Html, Body, Main, Footer Setting */
+
+h1, h2, h3, h4, h5 ,h6, a, p, span, li, ul, ol, blockquote, pre, code, input, textarea {
+  font-family: inherit;
+  font-weight: 700;
+  color: var(--first-level-text-color);
+}
+
+/* HACK : Global Heading Setting */
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+
+}
+a:hover {
+  color: var(--link-hover-color);
+}
+/* HACK: Specific Setting */
+
+input.input-box, textarea {
+  background: var(--input-background-color);
+}
+
+
+/* HACK : INPUT, TEXTAREA Filling */
+
+
+
+
+
+
+
+
+@media all and (max-width: 800px) {
+  .css-container {
+    margin: 0 auto;
+    width: 98vw;
+    min-height: 100vh;
+    margin: 0 auto;
+  }
+  footer {
+    font-weight: 200;
+    line-height: 1rem;
+  }
+} /* TYPE : Mobile */
+
+@media all and (min-width: 800px) {
+  .css-container {
+    margin: 0 auto;
+    width: 80vw;
+    min-height: 100vh;
+    margin: 1rem 10vw 0.38rem 10vw;
+  }
+
+} /* TYPE : Desktop */
+/* HACK : Media Query */
+
+
