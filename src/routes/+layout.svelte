@@ -1,10 +1,8 @@
 <script lang="ts">
 	// Loading first polyfills that are shared between for legacy&modern browsers.
 	import 'abortcontroller-polyfill';
-
-  import NavBar from '$component/navbar/Navbar.svelte';
-	import './styles.css';
-  export const ssr = false;
+  import NavBar from '$component/navbar/navbar.svelte';
+	import '$lib/css/styles.css';
 </script>
 
 <!-- Having the main container be flex causes issues on IE11 -->

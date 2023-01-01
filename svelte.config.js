@@ -14,10 +14,6 @@ const config = {
       $css: './src/lib/css',
     }
 	},
-  prerender: {
-    crawl: false,
-    entries: ['about'],
-  },
 };
 
 export default config;

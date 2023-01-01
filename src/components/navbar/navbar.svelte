@@ -90,7 +90,7 @@
 </style>
 
 <script lang="ts">
-  import Logo from '$component/logo.svelte';
+  import Logo from '$component/logo/logo_navbar.svelte';
 </script>
 
 <header class="">

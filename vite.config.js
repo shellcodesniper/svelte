@@ -1,7 +1,9 @@
 import { readFileSync } from 'fs';
-import { dirname, resolve } from 'path';
+import { dirname, resolve, extname } from 'path';
 import { fileURLToPath } from 'url';
 import { sveltekit } from '@sveltejs/kit/vite';
+import { imagetools } from 'vite-imagetools';
+import svg from '@poppanator/sveltekit-svg'
 import legacy from '@vitejs/plugin-legacy';
 
 // HACK : MY HACK
@@ -27,10 +29,24 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
  * @returns 
  */
 const localPath = (path) => resolve(__dirname, path);
+const supportedExtensions = ['png', 'jpg', 'jpeg', 'webp', 'gif', 'svg'];
 
 /** @type {import('vite').UserConfig} */
 const config = {
 	plugins: [
+    imagetools({
+			defaultDirectives: (url) => {
+				const extension = extname(url.pathname);
+				if (supportedExtensions.includes(extension)) {
+					return new URLSearchParams({
+						format: `webp;avif;${extension}`,
+						picture: true
+					});
+				}
+				return new URLSearchParams();
+			}
+		}),
+    svg(),
 		sveltekit(),
 		legacy({
 			// For complete list of available options, see:
