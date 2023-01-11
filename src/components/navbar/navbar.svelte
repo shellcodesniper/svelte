@@ -100,7 +100,7 @@
   <nav class="inline-navbar">
     <ul class="inline-menu">
       <li class="inline-menu-item menu-type-about">
-        <a href="/about">About</a>
+        <a href="https://me.ql.gl/">About</a>
       </li>
       <li class="inline-menu-item menu-type-projects">
         <a href="/projects">Projects</a>
